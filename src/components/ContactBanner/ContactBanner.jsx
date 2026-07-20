@@ -7,10 +7,10 @@ export default function ContactBanner() {
     <section className={styles.section} id="contact">
       <div className={`container ${styles.inner}`}>
         <div className={styles.photo}>
-          <img
-            src="/images/staff-pc.png"
-            alt="相談を受け付ける女性スタッフ"
-          />
+       <img
+          src={`${import.meta.env.BASE_URL}images/staff-pc.png`}
+          alt="相談を受け付ける女性スタッフ"
+        />
         </div>
 
         <div className={styles.copy}>

@@ -64,8 +64,8 @@ export default function About() {
             <div className={styles.greetingInner}>
               <div className={styles.photo}>
                 <img
-                  src="/images/representative.png"
-                  alt="神戸みらい法律事務所の代表弁護士"
+                src={`${import.meta.env.BASE_URL}images/representative.png`}
+                alt="神戸みらい法律事務所の代表弁護士"
                 />
               </div>
 

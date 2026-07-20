@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const consultations = [
   { icon: 'people', title: '相続・遺言', text: `遺産分割や相続手続きで\nお困りの方` },
   { icon: 'heart', title: '離婚・男女問題', text: `離婚協議・慰謝料・親権など\nのお悩みに` },
@@ -6,9 +8,9 @@ export const consultations = [
 ];
 
 export const services = [
-  { image: '/images/service01.png', icon: 'people', title: '相続・遺言・家族信託', text: '相続手続きや遺産分割協議の作成、家族信託のサポートまで対応します。' },
-  { image: '/images/service02.png', icon: 'heart', title: '離婚・男女問題', text: '離婚協議、財産分与、慰謝料請求、親権など、丁寧にサポートします。' },
-  { image: '/images/service03.png', icon: 'building', title: '企業法務・労働問題', text: '顧問契約、契約書作成、労務トラブルなど企業の法的リスクをサポートします。' },
+  { image: `${BASE_URL}images/service01.png`, icon: 'people', title: '相続・遺言・家族信託', text: '相続手続きや遺産分割協議の作成、家族信託のサポートまで対応します。' },
+  { image: `${BASE_URL}images/service02.png`, icon: 'heart', title: '離婚・男女問題', text: '離婚協議、財産分与、慰謝料請求、親権など、丁寧にサポートします。' },
+  { image: `${BASE_URL}images/service03.png`, icon: 'building', title: '企業法務・労働問題', text: '顧問契約、契約書作成、労務トラブルなど企業の法的リスクをサポートします。' },
 ];
 
 export const reasons = [
