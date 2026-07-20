@@ -1,0 +1,71 @@
+.pageHero {
+  padding: 60px 0;
+  text-align: center;
+  background: #f7f4ed;
+}
+
+.enTitle {
+  margin-bottom: 12px;
+
+  color: var(--gold-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+
+.pageHero h1 {
+  margin-bottom: 20px;
+
+  color: var(--navy);
+
+  font-family: "Noto Serif JP", serif;
+  font-size: 38px;
+}
+
+.description {
+  max-width: 620px;
+  margin: 0 auto;
+
+  color: #555;
+
+  line-height: 2;
+}
+
+.formSection {
+  padding: 90px 0 100px;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .pageHero {
+    padding: 50px 0;
+  }
+
+  .pageHero h1 {
+    font-size: 32px;
+  }
+
+  .formSection {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .pageHero {
+    padding: 42px 0;
+  }
+
+  .pageHero h1 {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .formSection {
+    padding: 60px 0;
+  }
+}

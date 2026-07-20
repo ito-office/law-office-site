@@ -1,0 +1,225 @@
+.formWrapper {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 56px 64px;
+
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.formGroup {
+  margin-bottom: 34px;
+}
+
+.formGroup label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+  color: var(--navy);
+
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.required,
+.optional {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 38px;
+  padding: 3px 7px;
+
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.required {
+  color: #fff;
+  background: var(--gold-dark);
+}
+
+.optional {
+  color: #666;
+  background: #e8e8e8;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 15px 16px;
+
+  color: #333;
+  background: #fff;
+
+  border: 1px solid #cfd3d8;
+  border-radius: 0;
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.formGroup textarea {
+  min-height: 190px;
+  resize: vertical;
+  line-height: 1.8;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #999;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 0 3px rgba(166, 132, 74, 0.12);
+}
+
+.formGroup .inputError {
+  border-color: #b84242;
+  background: #fffafa;
+}
+
+.errorMessage {
+  margin: 8px 0 0;
+
+  color: #b84242;
+
+  font-size: 12px;
+}
+
+.privacyNote {
+  margin-top: 8px;
+  padding: 18px 20px;
+
+  background: #f7f4ed;
+}
+
+.privacyNote p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.buttonArea {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.submitButton {
+  min-width: 260px;
+  padding: 17px 40px;
+
+  color: #fff;
+  background: var(--navy);
+
+  border: 1px solid var(--navy);
+  cursor: pointer;
+
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.submitButton:hover {
+  color: var(--navy);
+  background: #fff;
+}
+
+.successMessage {
+  margin-bottom: 30px;
+  padding: 24px;
+
+  text-align: center;
+
+  background: #f7f4ed;
+  border: 1px solid var(--gold-dark);
+}
+
+.successMessage p {
+  margin: 0 0 6px;
+
+  color: var(--navy);
+
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.successMessage span {
+  color: #555;
+  font-size: 13px;
+}
+
+/* タブレット */
+@media (max-width: 900px) {
+  .form {
+    padding: 46px 42px;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 650px) {
+  .form {
+    padding: 32px 20px;
+  }
+
+  .formGroup {
+    margin-bottom: 28px;
+  }
+
+  .formGroup label {
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .formGroup textarea {
+    min-height: 160px;
+  }
+
+  .buttonArea {
+    margin-top: 30px;
+  }
+
+  .submitButton {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .successMessage {
+    padding: 20px 16px;
+  }
+
+  .successMessage p {
+    font-size: 16px;
+  }
+}

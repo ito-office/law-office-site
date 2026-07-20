@@ -1,0 +1,107 @@
+.footer {
+  position: relative;
+
+  padding: 32px 0 20px;
+
+  background: #fff;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info p {
+  margin: 14px 0 22px;
+
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phone strong {
+  color: var(--navy);
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.phone span {
+  font-size: 11px;
+  color: #666;
+}
+
+.copy {
+  margin-top: 28px;
+
+  text-align: center;
+
+  font-size: 10px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+
+  width: 68px;
+  height: 68px;
+
+  color: #fff;
+  background: var(--navy);
+
+  border-radius: 50%;
+
+  font-size: 10px;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.top:hover {
+  opacity: 0.85;
+}
+
+/* タブレット */
+@media (max-width: 900px) {
+  .grid {
+    gap: 40px;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 620px) {
+  .footer {
+    padding: 28px 0 20px;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .phone strong {
+    font-size: 18px;
+  }
+
+  .top {
+    align-self: flex-end;
+
+    width: 56px;
+    height: 56px;
+  }
+
+  .copy {
+    margin-top: 24px;
+
+    text-align: center;
+  }
+}

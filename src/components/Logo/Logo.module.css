@@ -1,0 +1,7 @@
+.logo { display:flex; align-items:center; gap:12px; color:var(--navy); min-width:max-content; }
+.mark { width:40px; height:46px; display:grid; place-items:center; color:var(--gold); background:var(--navy); clip-path:polygon(50% 0, 90% 13%, 90% 65%, 50% 100%, 10% 65%, 10% 13%); }
+.scale { font-size:21px; transform:translateY(-1px); }
+.logo strong { display:block; font:600 17px/1.25 'Noto Serif JP',serif; letter-spacing:.05em; }
+.logo small { display:block; margin-top:4px; color:var(--gold-dark); font-size:7px; letter-spacing:.16em; }
+.light { color:white; }
+@media(max-width:480px){ .logo strong{font-size:14px}.mark{width:34px;height:40px}.logo{gap:9px} }

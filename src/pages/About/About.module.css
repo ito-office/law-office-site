@@ -1,0 +1,419 @@
+.pageHero {
+  padding: 40px 0;
+  text-align: center;
+  background: #f7f4ed;
+}
+
+.pageHeroEn {
+  margin: 0 0 10px;
+
+  color: var(--gold-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.pageHero h1 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.greeting {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.sectionHeading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sectionHeading p {
+  margin: 0 0 10px;
+
+  color: var(--gold-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.sectionHeading h2 {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.greetingInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: stretch;
+  gap: 64px;
+}
+
+.photo {
+  min-height: 520px;
+  overflow: hidden;
+
+  background: #e9edf1;
+}
+
+.photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #333;
+
+  font-size: 14px;
+  line-height: 2;
+}
+
+.message p {
+  margin: 0 0 20px;
+}
+
+.lead {
+  margin-bottom: 28px !important;
+
+  color: var(--navy);
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.8 !important;
+  letter-spacing: 0.06em;
+}
+
+.signature {
+  margin-top: 18px;
+  text-align: right;
+}
+
+.signature span {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+}
+
+.signature strong {
+  color: var(--navy);
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+/* 事務所概要 */
+.overview {
+  padding: 100px 0;
+  background: #f7f4ed;
+}
+
+.overviewCard {
+  max-width: 900px;
+  margin: 0 auto;
+
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.infoList {
+  margin: 0;
+}
+
+.infoRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.infoRow:last-child {
+  border-bottom: 0;
+}
+
+.infoRow dt {
+  padding: 24px 28px;
+
+  color: var(--navy);
+  background: #f5f7fa;
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.infoRow dd {
+  margin: 0;
+  padding: 24px 30px;
+
+  color: #333;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* アクセス */
+.access {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.accessInner {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: stretch;
+    gap: 56px;
+}
+
+.map {
+  flex: 1.1;
+  min-width: 0;
+}
+
+.mapFrame {
+  display: block;
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.mapPlaceholder span {
+  color: var(--gold-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.mapPlaceholder p {
+  margin: 8px 0 0;
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.accessText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #333;
+
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.accessLead {
+  margin: 0 0 20px;
+
+  color: var(--navy);
+
+  font-family: 'Noto Serif JP', serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.accessText > p {
+  margin-top: 0;
+}
+
+.accessBox {
+  padding: 18px 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.accessBox:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+
+.accessBox span {
+  display: block;
+  margin-bottom: 5px;
+
+  color: var(--gold-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.accessBox strong {
+  color: var(--navy);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.accessNote {
+  margin-top: 18px;
+
+  font-size: 12px;
+  color: #666;
+}
+
+.accessNote p {
+  margin: 0;
+}
+
+/* タブレット */
+@media (max-width: 900px) {
+  .pageHero {
+    padding: 68px 0 62px;
+  }
+
+  .pageHero h1 {
+    font-size: 34px;
+  }
+
+  .greeting,
+  .overview,
+  .access {
+    padding: 80px 0;
+  }
+
+  .greetingInner,
+  .accessInner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .photo {
+    height: 440px;
+    min-height: 0;
+  }
+
+  .photo img {
+    object-position: center 25%;
+  }
+
+  .message {
+    padding: 0 20px;
+  }
+
+  .map {
+    min-height: 340px;
+  }
+
+  .mapPlaceholder {
+    min-height: 340px;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 650px) {
+  .pageHero {
+    padding: 52px 0 48px;
+  }
+
+  .pageHero h1 {
+    font-size: 29px;
+  }
+
+  .greeting,
+  .overview,
+  .access {
+    padding: 64px 0;
+  }
+
+  .sectionHeading {
+    margin-bottom: 32px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 28px;
+  }
+
+  .greetingInner,
+  .accessInner {
+    gap: 30px;
+  }
+
+  .photo {
+    height: 260px;
+  }
+
+  .photo img {
+    object-position: center 25%;
+  }
+
+  .message {
+    padding: 0;
+
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 1.7 !important;
+  }
+
+  .signature strong {
+    font-size: 16px;
+  }
+
+  .infoRow {
+    grid-template-columns: 1fr;
+  }
+
+  .infoRow dt {
+    padding: 14px 18px;
+  }
+
+  .infoRow dd {
+    padding: 18px;
+    font-size: 13px;
+  }
+
+  .map,
+  .mapPlaceholder {
+    min-height: 260px;
+  }
+
+  .mapPlaceholder p {
+    font-size: 20px;
+  }
+
+  .accessLead {
+    font-size: 20px;
+  }
+
+  .accessText {
+    font-size: 13px;
+  }
+
+  .mapFrame {
+    height: 300px;
+  }
+}
