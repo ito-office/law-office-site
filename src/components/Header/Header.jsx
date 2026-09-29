@@ -6,11 +6,18 @@ import Icon from '../Icon/Icon';
 
 import styles from './Header.module.css';
 
+// const nav = [
+//   ['ホーム', '/#top'],
+//   ['サービス', '/#services'],
+//   ['選ばれる理由', '/#reasons'],
+//   ['よくあるご質問', '/#faq'],
+// ];
+
 const nav = [
-  ['ホーム', '/#top'],
-  ['サービス', '/#services'],
-  ['選ばれる理由', '/#reasons'],
-  ['よくあるご質問', '/#faq'],
+  ['ホーム', 'top'],
+  ['サービス', 'services'],
+  ['選ばれる理由', 'reasons'],
+  ['よくあるご質問', 'faq'],
 ];
 
 export default function Header() {
@@ -36,7 +43,7 @@ export default function Header() {
           className={`${styles.nav} ${open ? styles.open : ''}`}
           aria-label="メインナビゲーション"
         >
-          {nav.map(([label, href]) => (
+          {/* {nav.map(([label, href]) => (
             <a
               key={href}
               href={href}
@@ -44,6 +51,24 @@ export default function Header() {
             >
               {label}
             </a>
+          ))} */}
+
+          {nav.map(([label, id]) => (
+            <Link
+              key={id}
+              to="/"
+              onClick={() => {
+                close();
+
+                setTimeout(() => {
+                  document
+                    .getElementById(id)
+                    ?.scrollIntoView({ behavior: 'smooth' });
+                }, 0);
+              }}
+            >
+              {label}
+            </Link>
           ))}
 
           <Link
